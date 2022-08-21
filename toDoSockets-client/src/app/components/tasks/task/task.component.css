@@ -1,0 +1,17 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+  height: 6vh;
+  margin: 5px;
+  background-color: rgb(247, 245, 239);
+  padding: 6px;
+}
+
+.editBtn,
+.deleteBtn {
+  margin: 8px;
+  padding: 4px;
+  background-color: blueviolet;
+}

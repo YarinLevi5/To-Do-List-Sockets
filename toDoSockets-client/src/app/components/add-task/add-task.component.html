@@ -1,0 +1,12 @@
+<form class="add-to-do-container">
+  <label>
+    Task :
+    <input
+      type="text"
+      placeholder="Write your task"
+      [(ngModel)]="taskObject.task"
+      name="task"
+    />
+  </label>
+  <button class="addBtn" (click)="addTask()">Add</button>
+</form>

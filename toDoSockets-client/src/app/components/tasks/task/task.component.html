@@ -1,0 +1,23 @@
+<div class="task">
+  <div>
+    <div class="editMode" *ngIf="!edit">
+      <div>{{ updatedTask.task }}</div>
+    </div>
+    <div *ngIf="edit">
+      <label>
+        Task:
+        <input
+          type="text"
+          placeholder="Edit Task"
+          [(ngModel)]="updatedTask.task"
+        />
+      </label>
+    </div>
+  </div>
+  <div>
+    <button class="editBtn" (click)="editTask()">
+      {{ edit ? "Save" : "Edit" }}
+    </button>
+    <button class="deleteBtn" (click)="deleteTask()">Delete</button>
+  </div>
+</div>
